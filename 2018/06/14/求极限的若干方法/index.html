@@ -62,7 +62,7 @@
 
 
 
-  <meta name="keywords" content="一元函数极限," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -74,14 +74,13 @@
 
 
 <meta name="description" content="求极限的若干种方法">
-<meta name="keywords" content="一元函数极限">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一元函数极限">
 <meta property="og:url" content="http://yoursite.com/2018/06/14/求极限的若干方法/index.html">
 <meta property="og:site_name" content="熊蜀黍的个人站">
 <meta property="og:description" content="求极限的若干种方法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-21T15:32:06.790Z">
+<meta property="og:updated_time" content="2018-06-22T14:44:48.037Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一元函数极限">
 <meta name="twitter:description" content="求极限的若干种方法">
@@ -370,6 +369,7 @@ so &: N= \frac{4}{\epsilon ^2}+1 \\
 <script type="math/tex; mode=display">
 (x_1-f(x_1))(x_1-x^{＋})\ge 0</script><p>则数列{$x_n$}必收敛，极限即为该不动点。当$(x_1-f(x_1))(x_1-x^{+})\gt 0$时，该点为唯一不动点。$\mathbf{可分别讨论x_1和x^{+}的大小关系，通过单调性和通项公式迭代证明}$<br>ｂ）：若数列{$x_n$}在区间I上的通项为$x_{n+1}=f(x_n)$，且ｆ(x)在I上严格递减，若ｆ有不动点，则{$x_{2n+1}$},{$x_{2n}$}分别在不动点的两侧，则对于数列{$x_{2n+1}$}和{$x_{2n}$}的通项公式为$F(x)=f(f(x))$，且$F’(x)=f’(f(x))f’(x)\gt 0$(ｆ(x)严格递减)，则可以按照(a)的方法对{$x_{2n+1}$}和{$x_{2n}$}分别讨论收敛性。</p>
 <h3 id="利用中值定理求极限"><a href="#利用中值定理求极限" class="headerlink" title="利用中值定理求极限"></a>利用中值定理求极限</h3><p>来看一个简单的极限：$\mathbf{\lim\limits_{x \to 0}\frac{sinx-sin(sinx)}{x^3}}$<br>我们的做法是：<br>\begin{equation}\begin{split}<br>&amp; =\lim\limits_{x \to 0}\frac{sinx-sin(sinx)}{x-sinx}\frac{x-sinx}{x^3} \\<br>since\;Lagrange\;Mean\;Value\;Theorem<br>&amp; =\lim\limits_{x \to 0} sin’(\zeta)\frac{x-sinx}{x^3}\quad \zeta\in (sinx,x)  \\<br>&amp; =\lim\limits_{x \to 0} cos(\zeta)\frac{1}{6}\quad \zeta\in (sinx,x) \\<br>&amp; =1*\frac{1}{6}=\frac{1}{6}<br>\end{split}\end{equation}<br>该题虽然可以用洛必达或者泰勒展开来做，当相较中值定理方法简单许多。</p>
+<p>对于这类分子是(f(g(x))-f(h(x)))的极限，也可以化为变限积分利用积分中值定理求解（$\mathbf{但是一定要慎用！！}$）。<br>例如同样是上面的题，利用积分中值定理的解法是：<br>\begin{equation}\begin{split}<br>&amp; =\lim\limits_{x \to 0} \frac{\int_{sinx}^{x} costdt}{x^3} \\<br>since\;mean\;value\;theorem\;for\;integrals<br>&amp; =\lim\limits_{x \to 0}  \frac{(x-sinx)cos\zeta}{x^3} \quad \zeta \in (sinx,x) \\<br>&amp; =\frac{1}{6}<br>\end{split}\end{equation}<br>在积分中值定理近似时，由于$\zeta$是位于积分上下限之间的一个不确定量</p>
 
       
     </div>
@@ -384,12 +384,6 @@ so &: N= \frac{4}{\epsilon ^2}+1 \\
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/一元函数极限/" rel="tag"># 一元函数极限</a>
-          
-        </div>
       
 
       
@@ -409,6 +403,10 @@ so &: N= \frac{4}{\epsilon ^2}+1 \\
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/14/连续性与一致连续性/" rel="prev" title="连续性与一致连续">
+                连续性与一致连续 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -489,7 +487,7 @@ so &: N= \frac{4}{\epsilon ^2}+1 \\
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -500,7 +498,7 @@ so &: N= \frac{4}{\epsilon ^2}+1 \\
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -511,7 +509,7 @@ so &: N= \frac{4}{\epsilon ^2}+1 \\
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
