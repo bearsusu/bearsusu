@@ -80,7 +80,7 @@
 <meta property="og:site_name" content="熊蜀黍的个人站">
 <meta property="og:description" content="一元微分">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-22T14:44:52.361Z">
+<meta property="og:updated_time" content="2018-06-23T05:58:20.226Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一元微分">
 <meta name="twitter:description" content="一元微分">
@@ -329,7 +329,7 @@
       
 
       
-        <h3 id="高阶导数"><a href="#高阶导数" class="headerlink" title="高阶导数"></a>高阶导数</h3><p>  牛莱公式：$(fg)^{(n)}=\sum\limits_{k=0}^n C_n^k f^{(n-k)}g^k $</p>
+        <h3 id="高阶导数"><a href="#高阶导数" class="headerlink" title="高阶导数"></a>高阶导数</h3><p>牛莱公式：$(fg)^{(n)}=\sum\limits_{k=0}^n C_n^k f^{(n-k)}g^k $</p>
 <h3 id="中值定理"><a href="#中值定理" class="headerlink" title="中值定理"></a>中值定理</h3><pre><code>Femat定理
 </code></pre><p>  若函数$f$在其极值点$x_0\in (a,b)$处可导，则必有$f’(x_0)=0$</p>
 <pre><code>Rolle定理
@@ -342,31 +342,32 @@
 </code></pre><p>  如果$f在[a,b]$上可导，那么:</p>
 <p>  a：导函数$f’$可以取得$f’(a)到f’(b)$之间的一切值</p>
 <p>  b：$f’$在$[a,b]$无第一类间断点</p>
-<h3 id="中值定理证明题型"><a href="#中值定理证明题型" class="headerlink" title="中值定理证明题型"></a>中值定理证明题型</h3><p>  a：证明存在$\xi$,使$f(\xi)=0$</p>
+<h3 id="中值定理证明题型"><a href="#中值定理证明题型" class="headerlink" title="中值定理证明题型"></a>中值定理证明题型</h3><p> a：题设为证明存在$\xi$,使$f(\xi)=0$</p>
 <p>  介值定理</p>
-<p>  b：证明存在$\xi$，使$f^{(n)}(\xi)=0$</p>
+<p>  b：题设为证明存在$\xi$，使$f^{(n)}(\xi)=0$</p>
 <p>  rolle定理</p>
-<p>  c：存在$\xi$，使$f^{(n)}(\xi)=k$</p>
+<p>  c：题设为存在$\xi$，使$f^{(n)}(\xi)=k$</p>
 <p>  构造辅助函数</p>
-<pre><code>构造辅助函数的方法：
-</code></pre><p>  a):原函数法（适用于rolle引理的题目，通常题干中会给出1-2个函数值，或端点值）</p>
+<p>  $\mathbf{构造辅助函数的方法}$：</p>
+<p>  a):原函数法（适用于rolle引理的题目，通常题干中会给出1-2个函数值，或端点值）</p>
 <p>  步骤：</p>
 <p>  (a):将欲证等式中的$\xi$变为$x$，并化简为$g(x,f(x))=0$形式</p>
 <p>  (b):对$g(x)$积分，所得$G(x)$即为辅助函数，通过代值+rolle定理便可证结论</p>
 <p>  b）:待定因子法：对于某些按a方法无法积分或者积分结果无法满足rolle定理的条件时的情况</p>
 <p>  若欲证等式可化为：$f(x)H(x)+f’(x)G(x)=0$ 的形式，则可可构造辅助函数 $F(x)=P(x)f(x)$，其中 $P(x)=G(x),P’(x)=H(x)$</p>
 <p>  c)：万能的观察法 - -</p>
-<h5 id="d：双介值问题，证存在两个中值-xi-eta-满足某种关系。"><a href="#d：双介值问题，证存在两个中值-xi-eta-满足某种关系。" class="headerlink" title="d：双介值问题，证存在两个中值$\xi,\eta$满足某种关系。"></a>d：双介值问题，证存在两个中值$\xi,\eta$满足某种关系。</h5><p>  步骤：</p>
+<p> d：双介值问题，证存在两个中值$\xi,\eta$满足某种关系。</p>
+<p>  步骤：</p>
 <p>  (1):将欲证等式$H(\xi,\eta)=0$化为$f(\xi)=g(\eta)$形式</p>
 <p>  (2)：利用lagrange/cauchy定理证明</p>
-<p>  eg：证$\frac{f’(\xi)}{f’(\eta)}=\frac{e^b-e^a}{b-a}e^{-n}$..</p>
+<p>  eg：$\mathbf{证\frac{f’(\xi)}{f’(\eta)}=\frac{e^b-e^a}{b-a}e^{-n}}$..</p>
 <script type="math/tex; mode=display">
   \begin{align}
   & 原式等于 \frac{(b-a)f'(\xi)}{e^b-e^a}=\frac{f'(\eta)}{e^n}
   & 对于等式右边 \frac{f(b)-f(a)}{e^b-e^a}=\frac{f'(\eta)}{e^n}
   & 对于等式左边 \frac{f(b)-f(a)}{b-a}\frac{b-a}{e^b-e^a}=\frac{(b-a)f'(\xi)}{e^b-e^a}
   & 即证
-  \end{align}</script><p>  e：不等式的证明：1：单调性，2：极值最值，3：凹凸性，4：中值定理，5泰勒展开式。</p>
+  \end{align}</script><p> e：不等式的证明：1：单调性，2：极值最值，3：凹凸性，4：中值定理，5泰勒展开式。</p>
 <h3 id="函数的凸性"><a href="#函数的凸性" class="headerlink" title="函数的凸性"></a>函数的凸性</h3><p>  定义：设函数$f$在区间$I$上有定义，如果对任何$x_1,x_2\in I,x_1\neq x_2$，以及任意的$\lambda_1,\lambda_2\gt 0,\lambda_1+\lambda_2=1$,都有$f(\lambda_1 x_1+\lambda_2 x_2)\le \lambda_1f(x_1)+\lambda_2f(x_2)$,则$f$是$I$上的凸函数。</p>
 <h4 id="凸函数的判定条件"><a href="#凸函数的判定条件" class="headerlink" title="凸函数的判定条件"></a>凸函数的判定条件</h4><p>  设$f(x)$在$[a,b]$上连续，在（a,b）上可导，则$f$在$[a,b]$上是凸函数的充分必要条件是，$f’$在$(a,b)$上递增，即$f”(x)\ge 0$在$(a，b)$上恒成立。</p>
 <h4 id="凸函数的性质："><a href="#凸函数的性质：" class="headerlink" title="凸函数的性质："></a>凸函数的性质：</h4><p>  a：对任意$x_1,x_2,x_3…\in I,\lambda_1,\lambda_2,\lambda_3…+\lambda_n=1,\lambda_i\gt 0$,有</p>
@@ -378,7 +379,7 @@
 <p>  d:若$f(x)$在区间$I$上可导，则$f(x)$在$I$上为凸函数的充要条件为：对任意$x_0\in I$有：</p>
 <p>  $f(x)\ge f’(x_0)(x-x_0)+f(x_0)$，弦的斜率大于内点切线的斜率</p>
 <h3 id="一元微分"><a href="#一元微分" class="headerlink" title="一元微分"></a>一元微分</h3><p>  微分定义：设函数$f(x)$在$(a,b)$上有定义，若存在一个常数$\lambda$，使得$f(x+\Delta-f(x_0)=\lambda\Delta x+o(\Delta x),(\Delta x\Rightarrow 0)$,则称$f$在$x_0$处可微，$\lambda \Delta x$为$f$在$x_0$处的微分（$\lambda=f’(x_0)$）</p>
-<p>  一阶微分的形式不变性（高阶微分不具有形势不变性）：若$y=f(x)$,则$dy=f’dx$，对独立的$x$或$x$是中间变量都成立。</p>
+<p>  $\mathbf{一阶微分的形式不变性}$（高阶微分不具有形势不变性）：若$y=f(x)$,则$dy=f’dx$，对独立的$x$或$x$是中间变量都成立。</p>
 <h3 id="不同余项的Taylor余项。"><a href="#不同余项的Taylor余项。" class="headerlink" title="不同余项的Taylor余项。"></a>不同余项的Taylor余项。</h3><pre><code>peano余项（Maclanrin展开）,一般用于极限计算，讨论函数极值问题
 </code></pre><p>  $T_n (f,0,x)=f(0)+\frac{f’(0)}{1!}+\frac{f”(0)}{2!}x^2+…+\frac{f^{(n)}(0)}{n!}x^n+o(x^n)$</p>
 <p>  关于极值的一个定理：</p>
@@ -548,7 +549,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#高阶导数"><span class="nav-number">1.</span> <span class="nav-text">高阶导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中值定理"><span class="nav-number">2.</span> <span class="nav-text">中值定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中值定理证明题型"><span class="nav-number">3.</span> <span class="nav-text">中值定理证明题型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#d：双介值问题，证存在两个中值-xi-eta-满足某种关系。"><span class="nav-number">3.0.1.</span> <span class="nav-text">d：双介值问题，证存在两个中值$\xi,\eta$满足某种关系。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数的凸性"><span class="nav-number">4.</span> <span class="nav-text">函数的凸性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#凸函数的判定条件"><span class="nav-number">4.1.</span> <span class="nav-text">凸函数的判定条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#凸函数的性质："><span class="nav-number">4.2.</span> <span class="nav-text">凸函数的性质：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一元微分"><span class="nav-number">5.</span> <span class="nav-text">一元微分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不同余项的Taylor余项。"><span class="nav-number">6.</span> <span class="nav-text">不同余项的Taylor余项。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#高阶导数"><span class="nav-number">1.</span> <span class="nav-text">高阶导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中值定理"><span class="nav-number">2.</span> <span class="nav-text">中值定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中值定理证明题型"><span class="nav-number">3.</span> <span class="nav-text">中值定理证明题型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数的凸性"><span class="nav-number">4.</span> <span class="nav-text">函数的凸性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#凸函数的判定条件"><span class="nav-number">4.1.</span> <span class="nav-text">凸函数的判定条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#凸函数的性质："><span class="nav-number">4.2.</span> <span class="nav-text">凸函数的性质：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一元微分"><span class="nav-number">5.</span> <span class="nav-text">一元微分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不同余项的Taylor余项。"><span class="nav-number">6.</span> <span class="nav-text">不同余项的Taylor余项。</span></a></li></ol></div>
             
 
           </div>

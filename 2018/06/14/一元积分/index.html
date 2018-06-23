@@ -80,7 +80,7 @@
 <meta property="og:site_name" content="熊蜀黍的个人站">
 <meta property="og:description" content="一元积分">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-23T03:25:16.514Z">
+<meta property="og:updated_time" content="2018-06-23T05:55:00.567Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一元积分">
 <meta name="twitter:description" content="一元积分">
@@ -329,17 +329,14 @@
       
 
       
-        <h3 id="不定积分的一般方法"><a href="#不定积分的一般方法" class="headerlink" title="不定积分的一般方法"></a>不定积分的一般方法</h3><p>分部积分（略）</p>
-<p>换元法</p>
-<p>关于双曲正弦/双曲余弦的性质：</p>
-<p>$a:(cosht)’=sinht,(sinht)’=cosht$</p>
+        <h3 id="分部积分（略）"><a href="#分部积分（略）" class="headerlink" title="分部积分（略）"></a>分部积分（略）</h3><h3 id="换元法"><a href="#换元法" class="headerlink" title="换元法"></a>换元法</h3><h3 id="双曲正弦-双曲余弦的性质："><a href="#双曲正弦-双曲余弦的性质：" class="headerlink" title="双曲正弦/双曲余弦的性质："></a>双曲正弦/双曲余弦的性质：</h3><p>$a:(cosht)’=sinht,(sinht)’=cosht$</p>
 <p>$b:cosh^2x-sinh^2x=1,cosh2x=cosh^2x+sinh^2x,sinh2x=2sinhxcoshx $</p>
 <p>$c:x=sinht$的反函数是$t=ln(x+\sqrt{1+x^2},x=cosht$的反函数是$t=ln(x+\sqrt{x^2-1}$<br>$\mathbf{eg:\int \frac{1}{\sqrt{a^2+x^2}}dx}$<br>\begin{equation}\begin{split}<br>let:&amp; x=asinht,dx=acoshtdt \\<br>\Rightarrow &amp;\int \frac{acosht}{\sqrt{a^2+a^2sinh^2t}}dt=\int 1dt=t \\<br>&amp; t=ln(x+\sqrt{1+x^2}) \\<br>\Rightarrow &amp;\int \frac{dx}{\sqrt{a^2+x^2}}=ln(x+\sqrt{1+x^2})+C<br>\end{split}\end{equation}<br>对于积分$\int ln(x+\sqrt{x^2+1})dx$的积分亦可反代分部</p>
 <h3 id="有理函数积分"><a href="#有理函数积分" class="headerlink" title="有理函数积分"></a>有理函数积分</h3><p>对于一般形式的有理函数积分，可通过试根，长除法，待定系数法的步骤进行化简积分。</p>
 <h4 id="int-R-cosx-sinx-dx-型积分"><a href="#int-R-cosx-sinx-dx-型积分" class="headerlink" title="$\int R(cosx,sinx)dx$型积分"></a>$\int R(cosx,sinx)dx$型积分</h4><p>万能公式：$令t=tan\frac{x}{2}\Rightarrow \int R(\frac{1-t^2}{1+t^2},\frac{2t}{1+t^2})\frac{2}{1+t^2}dt$</p>
 <h4 id="int-R-x-sqrt-n-frac-ax-b-cx-d-dx-型积分"><a href="#int-R-x-sqrt-n-frac-ax-b-cx-d-dx-型积分" class="headerlink" title="$\int R(x,\sqrt{n}{\frac{ax+b}{cx+d}})dx$型积分"></a>$\int R(x,\sqrt{n}{\frac{ax+b}{cx+d}})dx$型积分</h4><p>令$t=\sqrt{n}{\frac{ax+b}{cx+d}}$</p>
 <p>$\Rightarrow x=\frac{dt^n-b}{-ct^n+a}….$</p>
-<h4 id="二项微分式积分"><a href="#二项微分式积分" class="headerlink" title="二项微分式积分"></a>二项微分式积分</h4><p>积分形式为：$\int x^{\alpha}(a+bx^{\beta})^(gamma)$,</p>
+<h3 id="二项微分式积分"><a href="#二项微分式积分" class="headerlink" title="二项微分式积分"></a>二项微分式积分</h3><p>积分形式为：$\int x^{\alpha}(a+bx^{\beta})^(gamma)$,</p>
 <p>若$\gamma,\frac{\alpha+1}{\beta},\frac{\alpha+1}{\beta}+\gamma$有其一为整数，则积分可积，否则不初等。</p>
 <p>$A:若\gamma 为整数，令x^{\beta}=t\Rightarrow x=t^{\frac{1}{\beta}},dx=\frac{1}{\beta}t^{\frac{1}{\beta}-1}dt$</p>
 <p>原式$=\frac{1}{\beta}\int t^{\frac{\alpha+1}{\beta}-1}(a+bt)^{\gamma}dt$</p>
@@ -354,10 +351,10 @@
 <p>积分平均值定理</p>
 <p>设函数$f与g$在$[a,b]$上连续，$g$在$[a,b]$上不改变符号，则存在$\xi\in [a,b]$使得：$\int_a^b f(x)g(x)dx=f(\xi)\int_a^b g(x)dx$</p>
 <p>当$g(x)=1$时，即微分中值定理：$\int_a^b f(x)dx=f(\xi)(b-a)$</p>
-<h4 id="泰勒积分余项："><a href="#泰勒积分余项：" class="headerlink" title="泰勒积分余项："></a>泰勒积分余项：</h4><p>$f(x)=f(x_0)+\frac{1}{1!}f’(x_0)(x-x_0)+…+\frac{1}{n!}f^{n}(x_0)(x-x_0)^{n}+R_n (x),R_n(x)=\frac{1}{n!}\int_{x_0}^x (x-t)^{n}f^{(n+1)}(t)dt$</p>
+<h3 id="泰勒积分余项："><a href="#泰勒积分余项：" class="headerlink" title="泰勒积分余项："></a>泰勒积分余项：</h3><p>$f(x)=f(x_0)+\frac{1}{1!}f’(x_0)(x-x_0)+…+\frac{1}{n!}f^{n}(x_0)(x-x_0)^{n}+R_n (x),R_n(x)=\frac{1}{n!}\int_{x_0}^x (x-t)^{n}f^{(n+1)}(t)dt$</p>
 <p>对$R_n(x),若令f(t)=f^{(n+1)}(t),g(t)=(x-t)^n,利用积分平均值定理即可得到lagrange余项$</p>
 <p>利用微分中值定理可以得到cauchy余项。</p>
-<h4 id="积分学在几何中的一些应用："><a href="#积分学在几何中的一些应用：" class="headerlink" title="积分学在几何中的一些应用："></a>积分学在几何中的一些应用：</h4><p>a：平面图形的面积（略）</p>
+<h3 id="积分学在几何中的一些应用："><a href="#积分学在几何中的一些应用：" class="headerlink" title="积分学在几何中的一些应用："></a>积分学在几何中的一些应用：</h3><p>a：平面图形的面积（略）</p>
 <p>b:空间曲线的弧长：</p>
 <p>参数式曲线：$s(\Gamma)=\int_\alpha^\beta \sqrt{(x’(t))^2+(y’(t))^2+(z’(t))^2}dt$</p>
 <p>显式方程：$s(\Gamma)=\int_a^b \sqrt{1+(f’(x))^2}dx$</p>
@@ -531,7 +528,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#不定积分的一般方法"><span class="nav-number">1.</span> <span class="nav-text">不定积分的一般方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有理函数积分"><span class="nav-number">2.</span> <span class="nav-text">有理函数积分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#int-R-cosx-sinx-dx-型积分"><span class="nav-number">2.1.</span> <span class="nav-text">$\int R(cosx,sinx)dx$型积分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#int-R-x-sqrt-n-frac-ax-b-cx-d-dx-型积分"><span class="nav-number">2.2.</span> <span class="nav-text">$\int R(x,\sqrt{n}{\frac{ax+b}{cx+d}})dx$型积分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二项微分式积分"><span class="nav-number">2.3.</span> <span class="nav-text">二项微分式积分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#泰勒积分余项："><span class="nav-number">2.4.</span> <span class="nav-text">泰勒积分余项：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#积分学在几何中的一些应用："><span class="nav-number">2.5.</span> <span class="nav-text">积分学在几何中的一些应用：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#分部积分（略）"><span class="nav-number">1.</span> <span class="nav-text">分部积分（略）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换元法"><span class="nav-number">2.</span> <span class="nav-text">换元法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#双曲正弦-双曲余弦的性质："><span class="nav-number">3.</span> <span class="nav-text">双曲正弦/双曲余弦的性质：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有理函数积分"><span class="nav-number">4.</span> <span class="nav-text">有理函数积分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#int-R-cosx-sinx-dx-型积分"><span class="nav-number">4.1.</span> <span class="nav-text">$\int R(cosx,sinx)dx$型积分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#int-R-x-sqrt-n-frac-ax-b-cx-d-dx-型积分"><span class="nav-number">4.2.</span> <span class="nav-text">$\int R(x,\sqrt{n}{\frac{ax+b}{cx+d}})dx$型积分</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二项微分式积分"><span class="nav-number">5.</span> <span class="nav-text">二项微分式积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#泰勒积分余项："><span class="nav-number">6.</span> <span class="nav-text">泰勒积分余项：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#积分学在几何中的一些应用："><span class="nav-number">7.</span> <span class="nav-text">积分学在几何中的一些应用：</span></a></li></ol></div>
             
 
           </div>
